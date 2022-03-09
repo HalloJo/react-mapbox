@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import mapbox from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+import mapbox from "mapbox-gl";
+import "./Map.css";
 
 class Map extends Component {
   componentDidMount() {
@@ -13,11 +14,7 @@ class Map extends Component {
   }
 
   render() {
-    return (
-      <div id="map" className="App">
-        HERE WILL GO OUR MAP
-      </div>
-    );
+    return <div id="map"></div>;
   }
 }
 
