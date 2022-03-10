@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Map from "./Map";
 import Toggler from "./Toggler";
+import Search from "./Search";
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <Toggler app={this} />
+        <Search app={this} />
         <Map app={this} />
       </div>
     );
