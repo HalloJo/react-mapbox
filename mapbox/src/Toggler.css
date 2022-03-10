@@ -2,6 +2,19 @@
     position: fixed;
     bottom: 40px;
     left: 20px;
-    background-color: pink;
     z-index: 1;
+}
+
+button {
+    background-color: white;
+    appearance: none;
+    border: none;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0 2px 0 0;
+    color: grey
+}
+
+button.selected {
+    color: black
 }

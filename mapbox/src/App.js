@@ -8,6 +8,7 @@ class App extends Component {
     super(props);
 
     this.state = {
+      map: null,
       latitude: 52.2995,
       longitude: 5.2434,
       style: "mapbox://styles/mapbox/dark-v9",
