@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Toggler />
+        <Toggler app={this} />
         <Map app={this} />
       </div>
     );
