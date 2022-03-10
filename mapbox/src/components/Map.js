@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import mapbox from "mapbox-gl";
-import "./Map.css";
+import "../css/Map.css";
 
 class Map extends Component {
   componentDidMount() {

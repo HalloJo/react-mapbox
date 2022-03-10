@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Toggler.css";
+import "../css/Toggler.css";
 
 class Toggler extends Component {
   setLayer(url) {

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import Map from "./Map";
-import Toggler from "./Toggler";
-import Search from "./Search";
+import Map from "./components/Map";
+import Toggler from "./components/Toggler";
+import Search from "./components/Search";
 
 class App extends Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class App extends Component {
       latitude: 52.2995,
       longitude: 5.2434,
       style: "mapbox://styles/mapbox/dark-v9",
+      places: [],
     };
   }
 
