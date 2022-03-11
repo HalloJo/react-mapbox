@@ -13,9 +13,33 @@ class Search extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.setState({
-      value: "",
-    });
+
+    const accessToken =
+      "pk.eyJ1Ijoiam9yaWstdmFuLXJ1aXN3aWprIiwiYSI6ImNsMGpuc3c4NDAyZ3gzZG9kejJuczI4eXcifQ.xmrLCnZDAr8E9u99hF14Kw";
+    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${this.state.value}.json?access_token=${accessToken}`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        const places = this.props.app.state.places;
+        const firstResult = data.features[0];
+
+        console.log(data);
+
+        places.push({
+          name: this.state.value,
+          longitude: firstResult.center[0],
+          latitude: firstResult.center[1],
+        });
+
+        this.props.app.setState({
+          places: places,
+        });
+
+        this.setState({
+          value: "",
+        });
+      });
   };
 
   handleChange = (event) => {

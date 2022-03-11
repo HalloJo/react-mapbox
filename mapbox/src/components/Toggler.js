@@ -24,7 +24,7 @@ class Toggler extends Component {
       },
     ];
 
-    const buttons = styles.map((style) => {
+    const buttons = styles.map((style, index) => {
       const app = this.props.app;
       let className = "";
 
@@ -38,6 +38,7 @@ class Toggler extends Component {
           onClick={() => {
             this.setLayer(style.url);
           }}
+          key={index}
         >
           {style.name}
         </button>

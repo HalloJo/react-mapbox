@@ -14,10 +14,7 @@ class App extends Component {
       latitude: 52.2995,
       longitude: 5.2434,
       style: "mapbox://styles/mapbox/dark-v9",
-      places: [
-        { name: "Huizen", latitude: 52.2995, longitude: 5.2434 },
-        { name: "Huizen", latitude: 52.2995, longitude: 5.2434 },
-      ],
+      places: [],
     };
   }
 

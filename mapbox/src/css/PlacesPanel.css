@@ -6,11 +6,16 @@
     width: 200px;
 }
 
-.place-item {
+.place-item, 
+.no-results {
     background: white;
     text-align: left;
     padding: 10px;
     font-size: 14px;
+}
+
+.no-results {
+    color: lightgrey
 }
 
 .place-item:hover {

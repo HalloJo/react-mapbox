@@ -8,7 +8,11 @@ class PlaceItem extends Component {
   render() {
     const { place } = this.props;
 
-    return <div className="place-item">{place.name}</div>;
+    return (
+      <div className="place-item">
+        {place.name}, ({place.latitude}, {place.longitude})
+      </div>
+    );
   }
 }
 
