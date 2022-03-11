@@ -13,7 +13,7 @@ class Map extends Component {
       container: "map",
       style: app.state.style,
       center: [app.state.longitude, app.state.latitude],
-      zoom: 14,
+      zoom: 10,
     });
 
     const navigationControl = new mapbox.NavigationControl();
